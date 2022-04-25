@@ -1,5 +1,5 @@
 function palindromo(entrada) {
-    let re = /[^a-zA-Z0-9]/g;
+    let re = /[^a-zA-Z]/g;
     let entradaLower = entrada.toLowerCase().replace(re,"");
     let inverso = entradaLower.split(' ').reverse().join('');
     
@@ -11,4 +11,4 @@ function palindromo(entrada) {
 }
 
 
-console.log(palindromo("Socorram-me, subi no onibus em Marrocos"));
+console.log(palindromo());
